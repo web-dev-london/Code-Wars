@@ -1,10 +1,9 @@
 console.clear();
 
-const findLongestWord = (str) => {
-  let arr = str
-    .split(' ')
-    .sort((a, b) => a.length - b.length);
-  return arr[0].length;
+const numbers = [1, 2, 3, 4, -1, -2, -3, -4];
+
+const invertValues = (array) => {
+  return array.map((n) => (n === 0 ? n : -n));
 };
 
-console.log(findLongestWord('This is my first message'));
+console.log(invertValues(numbers));
