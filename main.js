@@ -1,9 +1,10 @@
 console.clear();
 
-const numbers = [34, -345, -1, 100];
+const summation = (num) => {
+  let count = 0;
+  for (let i = 1; i <= num; i++) count += i;
 
-const findSmallestInt = (args) => {
-  return args.sort((a, b) => a - b)[0];
+  return count;
 };
 
-console.log(findSmallestInt(numbers));
+console.log(summation(4));
