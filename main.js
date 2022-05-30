@@ -1,9 +1,10 @@
 console.clear();
 
-const numbers = [1, 2, 3, 4, -1, -2, -3, -4];
-
-const invertValues = (array) => {
-  return array.map((n) => (n === 0 ? n : -n));
+const abbrevName = (name) => {
+  return name
+    .split(' ')
+    .map((el) => el[0].toUpperCase())
+    .join('.');
 };
 
-console.log(invertValues(numbers));
+console.log(abbrevName('Murat Akhmedov'));
