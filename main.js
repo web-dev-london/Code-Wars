@@ -1,10 +1,7 @@
 console.clear();
 
-const abbrevName = (name) => {
-  return name
-    .split(' ')
-    .map((el) => el[0].toUpperCase())
-    .join('.');
+const lostWithoutMap = (numbers) => {
+  return numbers.map((item) => item * 2);
 };
 
-console.log(abbrevName('Murat Akhmedov'));
+console.log(lostWithoutMap([1, 2, 3, 4, 5]));
