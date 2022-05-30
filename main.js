@@ -1,7 +1,8 @@
 console.clear();
 
-const lostWithoutMap = (numbers) => {
-  return numbers.map((item) => item * 2);
+const isIsogram = (str) => {
+  return !str.match(/([a-z]).*\1/i);
 };
 
-console.log(lostWithoutMap([1, 2, 3, 4, 5]));
+console.log(isIsogram('isIsogram'));
+console.log(isIsogram('Isogram'));
