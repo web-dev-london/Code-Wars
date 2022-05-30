@@ -1,0 +1,23 @@
+{
+  "name": "code-wars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Murat-developer/Code-Wars.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Murat-developer/Code-Wars/issues"
+  },
+  "homepage": "https://github.com/Murat-developer/Code-Wars#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
