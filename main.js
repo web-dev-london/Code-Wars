@@ -1,8 +1,6 @@
 console.clear();
 
-const isIsogram = (str) => {
-  return !str.match(/([a-z]).*\1/i);
+const validatePin = (pin) => {
+  return /^(\d{4}||\d{6})$/.test(pin);
 };
-
-console.log(isIsogram('isIsogram'));
-console.log(isIsogram('Isogram'));
+console.log(validatePin('123456'));
