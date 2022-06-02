@@ -1,10 +1,10 @@
 console.clear();
 
-// Will You make it ?
+// Sum of Arrays
 
-const arrays = [50, 25, 2];
-console.log(countAverage(arrays));
+const arrays = [1, 5.2, 4, 0, -1];
+console.log(sum(arrays));
 
-function countAverage(distance, mpg, fuelLeft) {
-  return distance <= mpg * fuelLeft ? true : false;
+function sum(input) {
+  return input.reduce((a, b) => a + b, 0);
 }
