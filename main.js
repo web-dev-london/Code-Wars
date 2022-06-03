@@ -1,9 +1,14 @@
 console.clear();
 
-const getSum = (a, b) => {
-  let min = Math.min(a, b);
-  let max = Math.max(a, b);
-  return ((max - min + 1) * (min + max)) / 2;
+const paperWork = (n, m) => {
+  if (n < 0 || m < 0) return 0;
+  return n * m;
 };
 
-console.log(getSum(1, 1));
+console.log(paperWork(-5, 5));
+
+const paperWork2 = (n, m) => {
+  return n > 0 && m > 0 ? n * m : 0;
+};
+
+console.log(paperWork2(5, 5));
