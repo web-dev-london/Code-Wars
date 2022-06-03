@@ -1,6 +1,11 @@
 console.clear();
 
-const reversWord = (str) => {
-  return str.split('').reverse().join('');
-};
-console.log(reversWord('John Smith'));
+function reverseWord(str) {
+  return str
+    .split(' ')
+    .map((word) => {
+      return word.split('').reverse().join('');
+    })
+    .join(' ');
+}
+console.log(reverseWord('John Smith'));
