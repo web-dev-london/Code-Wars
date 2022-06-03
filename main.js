@@ -1,11 +1,6 @@
 console.clear();
 
-function reverseWord(str) {
-  return str
-    .split(' ')
-    .map((word) => {
-      return word.split('').reverse().join('');
-    })
-    .join(' ');
-}
-console.log(reverseWord('John Smith'));
+const minMax = (num) => {
+  return [Math.min(...num), Math.max(...num)];
+};
+console.log(minMax([1, 2, 3, 4]));
