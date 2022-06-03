@@ -1,6 +1,6 @@
 console.clear();
 
-const stringToArray = (str) => {
-  return str.split(' ');
+const reversWord = (str) => {
+  return str.split('').reverse().join('');
 };
-console.log(stringToArray('John Smith'));
+console.log(reversWord('John Smith'));
