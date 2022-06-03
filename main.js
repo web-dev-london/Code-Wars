@@ -1,14 +1,12 @@
 console.clear();
 
-const paperWork = (n, m) => {
-  if (n < 0 || m < 0) return 0;
-  return n * m;
+const removeSmallest = (numbers) => {
+  const copy = numbers.slice(0);
+  let smallestValue = numbers.indexOf(
+    Math.min(...numbers),
+  );
+  copy.splice(smallestValue, 1);
+  return copy;
 };
 
-console.log(paperWork(-5, 5));
-
-const paperWork2 = (n, m) => {
-  return n > 0 && m > 0 ? n * m : 0;
-};
-
-console.log(paperWork2(5, 5));
+console.log(removeSmallest([2, 2, 1, 2, 1]));
