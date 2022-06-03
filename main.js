@@ -1,6 +1,9 @@
 console.clear();
 
-const minMax = (num) => {
-  return [Math.min(...num), Math.max(...num)];
+const areaOrPerimeter = (l, w) => {
+  if (l === w) return l * w;
+  else {
+    return 2 * (l + w);
+  }
 };
-console.log(minMax([-1, -2, -3, -4]));
+console.log(areaOrPerimeter(6, 10));
